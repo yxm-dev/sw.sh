@@ -14,7 +14,7 @@ installdir=$HOME/.config/sw.sh
     declare -a sw_tpl
     declare -a sw_html
 # including data
-    source $installdir/cfile
+    source $installdir/data
 # defining variables
     for i in ${!sw_alias[@]}; do
         sw_mdDIR[$i]=${sw_topdir[$i]}/${sw_mddir[$i]}
