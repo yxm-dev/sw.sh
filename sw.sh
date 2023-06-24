@@ -19,7 +19,7 @@ install_dir=$HOME/.config/sw.sh
     for i in ${!sw_alias[@]}; do
         sw_mdDIR[$i]=${sw_topdir[$i]}/${sw_mddir[$i]}
         sw_tpl[$i]=${sw_topdir[$i]}/tpl/tpl.html
-        sw_html[$i]=${topdir[$i]}/html
+        sw_html[$i]=${sw_topdir[$i]}/html
     done
     
 # SW FUNCTION

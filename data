@@ -2,7 +2,7 @@
 
 sw_topdir[0]=$HOME/files/site
 sw_topdir[1]=$HOME/files/poem/site
-we_topdir[2]=$HOME/exam
+sw_topdir[2]=$HOME/exam
 
 sw_mddir[0]=md
 sw_mddir[1]=md
