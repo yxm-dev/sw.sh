@@ -1,0 +1,18 @@
+#! /bin/bash
+
+PKG_name="sw.sh"
+
+declare -a PKG_dependencies
+PKG_dependencies=(pandoc )
+
+declare -A PKG_distro_include
+PKG_distro_include["Debian"]="yes"
+PKG_distro_include["Arch"]="yes"
+PKG_distro_include["RedHat"]="yes"
+PKG_distro_include["openSUSE"]="yes"
+
+declare -A PKG_distro_package_name
+PKG_distro_package_name["Debian","pandoc"]="pandoc"
+PKG_distro_package_name["Arch","pandoc"]="pandoc"
+PKG_distro_package_name["RedHat","pandoc"]="pandoc"
+PKG_distro_package_name["openSUSE","pandoc"]="pandoc"

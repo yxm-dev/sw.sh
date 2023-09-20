@@ -1,0 +1,13 @@
+#! /bin/bash
+
+# ask for
+## topdir
+## mddir
+## alias
+## gitdir
+## ...
+
+
+# create directories $topdir/html e $topdir/tpl
+# create tpl.html based on pandoc default
+
