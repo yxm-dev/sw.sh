@@ -1,27 +1,24 @@
 #! /bin/bash
 
-sw_topdir[0]=$HOME/files/site
-sw_topdir[1]=$HOME/files/poem/site
-sw_topdir[2]=$HOME/exam
+SW_topdir[0]=$HOME/files/site
+SW_topdir[1]=$HOME/codeberg/lab
 
-sw_mddir[0]=md
-sw_mddir[1]=md
-sw_mddir[2]=md
+SW_mddir[0]=md
+SW_mddir[1]=md
 
-sw_alias[0]=site
-sw_alias[1]=poem
-sw_alias[2]=exam
+SW_alias[0]=site
+SW_alias[1]=lab
 
-sw_gitdir[0]=$HOME/bkp/codeberg/pages
-sw_gitdir[1]=$HOME/bkp/codeberg/poem
+SW_gitdir[0]=$HOME/bkp/codeberg/pages
+SW_gitdir[1]=$HOME/bkp/codeberg/lab
 
-sw_commit[0]="..."
-sw_commit[1]="..."
+SW_commit[0]="..."
+SW_commit[1]="..."
 
-sw_branch[0]="master"
-sw_branch[1]="pages"
+SW_branch[0]="master"
+SW_branch[1]="master"
 
-sw_remote[0]="pages"
-sw_remote[1]="poem"
+SW_remote[0]="pages"
+SW_remote[1]="lab"
 
 
