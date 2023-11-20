@@ -1,7 +1,7 @@
 #! /bin/bash
 
 SW_topdir[0]=$HOME/files/site
-SW_topdir[1]=$HOME/codeberg/lab
+SW_topdir[1]=$HOME/files/nerd/dev/lab
 
 SW_mddir[0]=md
 SW_mddir[1]=md
@@ -9,7 +9,7 @@ SW_mddir[1]=md
 SW_alias[0]=site
 SW_alias[1]=lab
 
-SW_gitdir[0]=$HOME/bkp/codeberg/pages
+SW_gitdir[0]=$HOME/bkp/codeberg/yxm
 SW_gitdir[1]=$HOME/bkp/codeberg/lab
 
 SW_commit[0]="..."
@@ -18,7 +18,7 @@ SW_commit[1]="..."
 SW_branch[0]="master"
 SW_branch[1]="master"
 
-SW_remote[0]="pages"
+SW_remote[0]="yxm"
 SW_remote[1]="lab"
 
 

@@ -130,12 +130,27 @@ install_dir=$HOME/.config/sw.sh
                     cd ${SW_gitdir[$x]}
                     git add .
                     git commit -m "${SW_commit[$x]}"
-                    git pull ${SW_remote[$x]} ${SW_branch[$x]}
-                    git push ${SW_remote[$x]} ${SW_branch[$x]}
+                    git push --force ${SW_remote[$x]} ${SW_branch[$x]}
                     echo "Done!"
                 elif [[ -z $2 ]]; then
                     for i in ${!SW_alias[@]}; do
                         sw -p ${alias[$i]}
+                    done
+                else
+                    echo $error
+                fi
+            elif [[ "$1" == "--push-all" ]]; then
+                if [[ "${SW_alias[@]}" =~ "$2" ]]; then
+                    inv_SW_alias $2
+                    rsync -av --progress --delete  --exclude '.git/*' ${SW_topdir[$x]}/ ${SW_gitdir[$x]}
+                    cd ${SW_gitdir[$x]}
+                    git add .
+                    git commit -m "${SW_commit[$x]}"
+                    git push --force ${SW_remote[$x]} ${SW_branch[$x]}
+                    echo "Done!"
+                elif [[ -z $2 ]]; then
+                    for i in ${!SW_alias[@]}; do
+                        sw --push-all ${alias[$i]}
                     done
                 else
                     echo $error
