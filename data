@@ -1,6 +1,6 @@
 #! /bin/bash
 
-SW_topdir[0]=$HOME/files/site
+SW_topdir[0]=$HOME/files/nerd/site
 SW_topdir[1]=$HOME/files/nerd/dev/lab
 
 SW_mddir[0]=md
